@@ -28,6 +28,7 @@ app.use("/", express.static("public")); //middleware for public folder for css o
 
 app.use("/", require("./routes/root")); //routing
 app.use("/users", require("./routes/userRoutes"));
+app.use("/notes", require("./routes/noteRouter"));
 
 app.all("*", (req, res) => {
   res.status(404);

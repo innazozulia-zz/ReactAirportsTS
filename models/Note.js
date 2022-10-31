@@ -21,7 +21,9 @@ const noteSchema = new mongoose.Schema(
       default: false,
     },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
 noteSchema.plugin(AutoIncrement, {
