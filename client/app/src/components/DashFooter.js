@@ -6,6 +6,9 @@ const DashFooter = () => {
   const { pathname } = useLocation();
 
   const onGoHomeClick = () => navigate("/dash");
+
+  let goHomeButton = null;
+
   if (pathname !== "/dash") {
     goHomeButton = (
       <button
@@ -18,7 +21,6 @@ const DashFooter = () => {
     );
   }
 
-  let goHomeButton = null;
   const content = (
     <footer className="dash-footer">
       {goHomeButton}

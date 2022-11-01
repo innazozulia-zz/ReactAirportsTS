@@ -1,20 +1,21 @@
 import { Link } from "react-router-dom";
+import { VscGear } from "react-icons/vsc";
 
 const Public = () => {
   const content = (
     <section className="public">
       <header>
-        <h1>
-          Welcome to <span className="nowrap">techNots Repairs!</span>
-        </h1>
+        <h1>Welcome to techNots!</h1>
       </header>
-      <main className="paulic__main">
+      <main className="public__main">
         <p>
           Located in Beautiful Downtown Foo City, techNots Repairs provides a
           trained staff ready to meet your tech repair needs.
         </p>
         <address className="public__addr">
-          techNots Repairs
+          <p>
+            techNots <VscGear />
+          </p>
           <br />
           str. Main 521
           <br />

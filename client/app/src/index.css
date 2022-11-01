@@ -8,7 +8,7 @@
 
 :root {
   /* COLORS */
-  --BGCOLOR: #0F172A;
+  --BGCOLOR: #33363e;
   --BORDER-COLOR: #FFF;
   --COLOR: #FFF;
   --ERROR: firebrick;
@@ -31,9 +31,6 @@
   margin-bottom: 0.5em;
 }
 
-.nowrap {
-  white-space: nowrap;
-}
 
 .icon-button {
   width: 48px;
@@ -62,7 +59,7 @@ body {
   min-height: 100vh;
   background-color: var(--BGCOLOR);
   color: var(--COLOR);
-  /* background-image: url('./img/background.jpg'); */
+  background-image: url('./img/background.jpg');
   background-size: cover;
   background-position: top right;
   background-blend-mode: multiply;
@@ -84,6 +81,13 @@ select {
 
 a {
   text-decoration: none;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 a,
@@ -118,8 +122,20 @@ a:focus-visible {
   padding: 1em 0;
 }
 
+.public__main p {
+  max-width: 400px;
+  margin: 20px 0;
+}
+
 .public__addr {
   margin-top: 1em;
+}
+
+.public__addr p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .welcome a::before {

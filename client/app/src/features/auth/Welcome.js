@@ -9,7 +9,7 @@ const Welcome = () => {
 
   const content = (
     <section className="welcome">
-      <p>{taday}</p>
+      <p>{today}</p>
       <h1>Welcome!</h1>
       <p>
         <Link to="/dash/notes">View techNotes</Link>
@@ -19,7 +19,7 @@ const Welcome = () => {
       </p>
     </section>
   );
-  return <div>Welcome</div>;
+  return content;
 };
 
 export default Welcome;
